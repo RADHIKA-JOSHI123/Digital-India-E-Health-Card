@@ -1,0 +1,278 @@
+@CHARSET "ISO-8859-1";
+
+body {
+	padding: 0 10px 10px 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #000;
+}
+
+.entirebody {
+	background-color: #fff;
+}
+
+.regform {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url("..//images/doctable.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 190vh;
+	background-size: cover;
+	background-position: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	position: relative;
+	display: flex;
+}
+
+.topnav {
+	border-top: 20px solid #fff;
+	overflow: hidden;
+	/*background-color: #333;*/
+}
+
+.topnav a {
+	margin-left: 20px;
+	margin-right: 20px;
+	float: left;
+	display: block;
+	/* color: #f2f2f2;
+    color: black;*/
+	color: #000;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 20px;
+	display: flex;
+	transition: 0.6s ease;
+}
+
+.topnav a:hover {
+	background-color: #000;
+	color: #fff;
+}
+
+.topnav a.active {
+	background-color: #04AA6D;
+	color: white;
+}
+
+.topnav .icon {
+	display: none;
+}
+
+.logo img {
+	float: left;
+	width: 300px;
+	height: auto;
+	overflow: hidden;
+	margin-top: 10px;
+	margin-left: 30px;
+}
+
+.healthlogo img {
+	margin-top: 10px;
+	float: right;
+	width: 70px;
+	height: auto;
+	margin-right: 30px;
+}
+
+.movingtext marquee {
+	background-color: #333333;
+	color: #fff;
+}
+
+.ml6 {
+	position: relative;
+	font-weight: 900;
+	font-size: 3.3em;
+}
+
+.ml6 .text-wrapper {
+	position: relative;
+	display: inline-block;
+	padding-top: 0.2em;
+	padding-right: 0.05em;
+	padding-bottom: 0.1em;
+	overflow: hidden;
+}
+
+.ml6 .letter {
+	display: inline-block;
+	line-height: 1em;
+}
+
+@media screen and (max-width: 600px) {
+	.topnav a:not (:first-child ) {
+		display: none;
+	}
+	.topnav a.icon {
+		float: left;
+		display: block;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.topnav.responsive {
+		position: relative;
+	}
+	.topnav.responsive .icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.topnav.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+	.logo img {
+		display: none;
+	}
+	.cardlies {
+		display: none;
+	}
+	.needhelp {
+		display: none;
+	}
+}
+
+input[type=text], input[type=password], input[type=number], input[type=date]
+	{
+	width: 100%;
+	color: black;
+	font-family: Verdana;
+	font-size: 18px;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid black;
+	box-sizing: border-box;
+	border-radius: 8px;
+}
+
+#FullRegister {
+	width: 680px;
+	padding: 10px;
+	margin: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgba(0, 0, 0, 0.609);
+	color: white;
+	font-size: 16px;
+	overflow: hidden;
+	margin-bottom: auto;
+}
+
+/*
+.page-footer {
+    margin-top: 50px;
+}
+9*/
+label {
+	color: white;
+	font-size: 16px;
+	font-style: bold;
+	font-weight: bolder;
+}
+
+form {
+	border: 2px solid red;
+	padding: 10px;
+	margin: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+}
+
+table, th, td {
+	border: 1px solid black;
+	padding: 5px;
+	border-spacing: 15px;
+	border: none;
+}
+
+/*
+table {
+    border-spacing: 35px;
+}
+*/
+h3 {
+	text-align: center;
+	margin: 24px 0 12px 0;
+}
+
+button {
+	background-color: #00c707;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+}
+
+button:hover {
+	opacity: 0.8;
+}
+
+@media only screen and (max-width:800px) {
+	input[type=text], input[type=password], input[type=number], input[type=date]
+		{
+		width: 100%;
+		color: black;
+		font-family: Verdana;
+		font-size: 18px;
+		padding: 12px 20px;
+		margin: 8px 0;
+		display: inline-block;
+		border: 1px solid black;
+		box-sizing: border-box;
+		border-radius: 8px;
+		right: 0;
+		z-index: 2;
+		display: block;
+	}
+	.bg-dark {
+		background: #1a1a1a;
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+			url("..//images//doctable.jpg");
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		position: relative;
+		display: flex;
+	}
+	form {
+		border: 2px solid red;
+		padding: 10px;
+		margin: 10px;
+		margin-left: auto;
+		margin-right: auto;
+		display: flex;
+	}
+	#female label {
+		font-size: 11px;
+	}
+	#male label {
+		font-size: 11px;
+	}
+	#other label {
+		font-size: 11px;
+	}
+}
