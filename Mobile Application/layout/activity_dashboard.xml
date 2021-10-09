@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer"
+    tools:openDrawer="start"
+    tools:context=".dashboard">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar"
+            app:title="Health Card"
+            app:titleTextColor="@color/white"
+            android:background="@color/teal_700"
+            />
+
+        <com.smarteist.autoimageslider.SliderView
+            android:id="@+id/slider"
+            android:layout_width="wrap_content"
+            android:layout_height="210dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="53dp"
+            android:layout_marginEnd="-2dp"
+            android:layout_marginBottom="458dp"
+            app:sliderAnimationDuration="600"
+            app:sliderAutoCycleDirection="back_and_forth"
+            app:sliderIndicatorAnimationDuration="600"
+            app:sliderIndicatorEnabled="true"
+            app:sliderIndicatorGravity="center_horizontal|bottom"
+            app:sliderIndicatorMargin="15dp"
+            app:sliderIndicatorOrientation="horizontal"
+            app:sliderIndicatorSelectedColor="#5A5A5A"
+            app:sliderIndicatorUnselectedColor="#FFF"
+            app:sliderScrollTimeInSec="1" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="389dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="350dp"
+            android:layout_marginRight="4dp"
+            android:textColor="@color/black"
+            android:text="Prime Minister Narendra Modi, in his 74th Independence Day speech, announced the launch of National Digital Health Mission (NDHM). The 'One Nation One Health Card' will digitize the health records of all Indians, making patient data accessible and inclusive in one card.
+The 'One Nation One Health Card' will be voluntary, with the choice left to the discretion of individuals and hospitals. Individuals who opt for the card will be allotted a unique health ID.A digital health card will carry multiple benefits. As the medical reports would be saved digitally, the card holder would not have to carry physical reports while changing cities or even consulting another doctor. With first-hand case history available at the click of the button, hospitals and doctors will be able to diagnose and treat patients better."
+            android:textSize="17sp" />
+
+
+    </RelativeLayout>
+
+
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/navmenu"
+        app:menu="@menu/iconmenu"
+        app:headerLayout="@layout/navheader"
+        android:layout_gravity="start"
+        />
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
